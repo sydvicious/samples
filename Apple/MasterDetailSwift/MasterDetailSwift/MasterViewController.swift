@@ -38,12 +38,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Dispose of any resources that can be recreated.
     }
 
+    @objc
     func insertNewObject(_ sender: Any) {
         let context = self.fetchedResultsController.managedObjectContext
         let newEvent = Event(context: context)
              
         // If appropriate, configure the new managed object.
-        newEvent.timestamp = NSDate()
+        newEvent.timestamp = Date()
 
         // Save the context.
         do {
