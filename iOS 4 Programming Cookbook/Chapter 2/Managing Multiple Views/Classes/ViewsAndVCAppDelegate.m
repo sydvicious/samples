@@ -23,7 +23,9 @@
   // Add the view controller's view to the window and display.
   [window addSubview:viewController.view];
   [window makeKeyAndVisible];
-  
+
+  [self.window setRootViewController:viewController];
+    
   return YES;
 }
 
@@ -74,13 +76,5 @@
    Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
    */
 }
-
-
-- (void)dealloc {
-  [viewController release];
-  [window release];
-  [super dealloc];
-}
-
 
 @end
