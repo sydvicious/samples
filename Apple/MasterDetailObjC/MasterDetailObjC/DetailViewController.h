@@ -2,8 +2,8 @@
 //  DetailViewController.h
 //  MasterDetailObjC
 //
-//  Created by Sydney Polk on 6/6/17.
-//  Copyright © 2017 Sydney Polk. All rights reserved.
+//  Created by Syd Polk on 6/17/18.
+//  Copyright © 2018 Bone Jarring Games and Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
