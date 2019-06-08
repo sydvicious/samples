@@ -17,7 +17,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
@@ -171,6 +171,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             case .move:
                 configureCell(tableView.cellForRow(at: indexPath!)!, withEvent: anObject as! Event)
                 tableView.moveRow(at: indexPath!, to: newIndexPath!)
+            default:
+                return
         }
     }
 
