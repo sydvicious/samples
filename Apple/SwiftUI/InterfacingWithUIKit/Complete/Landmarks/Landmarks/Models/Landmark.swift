@@ -34,15 +34,17 @@ struct Landmark: Hashable, Codable, Identifiable {
             label: Text(verbatim: name))
     }
 
-    func image(forSize size: Int) -> Image {
-        ImageStore.shared.image(name: imageName, size: size)
-    }
-
     enum Category: String, CaseIterable, Codable, Hashable {
         case featured = "Featured"
         case lakes = "Lakes"
         case rivers = "Rivers"
         case mountains = "Mountains"
+    }
+}
+
+extension Landmark {
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
     }
 }
 

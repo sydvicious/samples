@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     var categories: [String: [Landmark]] {
-        .init(
+        Dictionary(
             grouping: landmarkData,
             by: { $0.category.rawValue }
         )
@@ -19,6 +19,17 @@ struct CategoryHome: View {
         landmarkData.filter { $0.isFeatured }
     }
     
+    @State var showingProfile = false
+    
+    var profileButton: some View {
+        Button(action: { self.showingProfile.toggle() }) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .accessibility(label: Text("User Profile"))
+                .padding()
+        }
+    }
+
     var body: some View {
         NavigationView {
             List {
@@ -28,7 +39,7 @@ struct CategoryHome: View {
                     .clipped()
                     .listRowInsets(EdgeInsets())
                 
-                ForEach(categories.keys.sorted().identified(by: \.self)) { key in
+                ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
@@ -38,14 +49,10 @@ struct CategoryHome: View {
                 }
             }
             .navigationBarTitle(Text("Featured"))
-            .navigationBarItems(trailing:
-                PresentationLink(destination: ProfileHost()) {
-                    Image(systemName: "person.crop.circle")
-                        .imageScale(.large)
-                        .accessibility(label: Text("User Profile"))
-                        .padding()
-                }
-            )
+            .navigationBarItems(trailing: profileButton)
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+            }
         }
     }
 }
@@ -53,7 +60,7 @@ struct CategoryHome: View {
 struct FeaturedLandmarks: View {
     var landmarks: [Landmark]
     var body: some View {
-        landmarks[0].image(forSize: 250).resizable()
+        landmarks[0].image.resizable()
     }
 }
 
