@@ -28,7 +28,7 @@ struct LandmarkList: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Landmarks"), displayMode: .large)
+            .navigationBarTitle(Text("Landmarks"))
         }
     }
 }
@@ -36,7 +36,7 @@ struct LandmarkList: View {
 #if DEBUG
 struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"].identified(by: \.self)) { deviceName in
+        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
             LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)

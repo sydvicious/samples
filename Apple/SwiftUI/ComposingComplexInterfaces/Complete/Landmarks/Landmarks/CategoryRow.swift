@@ -20,7 +20,7 @@ struct CategoryRow: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    ForEach(self.items.identified(by: \.name)) { landmark in
+                    ForEach(self.items) { landmark in
                         NavigationLink(
                             destination: LandmarkDetail(
                                 landmark: landmark
@@ -40,12 +40,13 @@ struct CategoryItem: View {
     var landmark: Landmark
     var body: some View {
         VStack(alignment: .leading) {
-            landmark
-                .image(forSize: 155)
+            landmark.image
                 .renderingMode(.original)
+                .resizable()
+                .frame(width: 155, height: 155)
                 .cornerRadius(5)
             Text(landmark.name)
-                .color(.primary)
+                .foregroundColor(.primary)
                 .font(.caption)
         }
         .padding(.leading, 15)
@@ -59,6 +60,7 @@ struct CategoryRow_Previews: PreviewProvider {
             categoryName: landmarkData[0].category.rawValue,
             items: Array(landmarkData.prefix(4))
         )
+        .environmentObject(UserData())
     }
 }
 #endif

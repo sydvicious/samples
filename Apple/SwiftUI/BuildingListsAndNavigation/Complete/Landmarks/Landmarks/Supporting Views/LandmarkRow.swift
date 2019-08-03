@@ -12,7 +12,9 @@ struct LandmarkRow: View {
 
     var body: some View {
         HStack {
-            landmark.image(forSize: 50)
+            landmark.image
+                .resizable()
+                .frame(width: 50, height: 50)
             Text(verbatim: landmark.name)
             Spacer()
         }
