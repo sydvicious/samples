@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D062FF023FF02E900421874 /* MySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D062FEF23FF02E900421874 /* MySplitViewController.swift */; };
 		6275515320F9A1C6000F553D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275515220F9A1C6000F553D /* AppDelegate.swift */; };
 		6275515620F9A1C6000F553D /* MasterDetailSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6275515420F9A1C6000F553D /* MasterDetailSwift.xcdatamodeld */; };
 		6275515820F9A1C6000F553D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275515720F9A1C6000F553D /* MasterViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D062FEF23FF02E900421874 /* MySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySplitViewController.swift; sourceTree = "<group>"; };
 		6275514F20F9A1C6000F553D /* MasterDetailSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterDetailSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6275515220F9A1C6000F553D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6275515520F9A1C6000F553D /* MasterDetailSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MasterDetailSwift.xcdatamodel; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				6275516020F9A1C8000F553D /* LaunchScreen.storyboard */,
 				6275516320F9A1C8000F553D /* Info.plist */,
 				6275515420F9A1C6000F553D /* MasterDetailSwift.xcdatamodeld */,
+				1D062FEF23FF02E900421874 /* MySplitViewController.swift */,
 			);
 			path = MasterDetailSwift;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6275515620F9A1C6000F553D /* MasterDetailSwift.xcdatamodeld in Sources */,
+				1D062FF023FF02E900421874 /* MySplitViewController.swift in Sources */,
 				6275515320F9A1C6000F553D /* AppDelegate.swift in Sources */,
 				6275515820F9A1C6000F553D /* MasterViewController.swift in Sources */,
 				6275515A20F9A1C6000F553D /* DetailViewController.swift in Sources */,
