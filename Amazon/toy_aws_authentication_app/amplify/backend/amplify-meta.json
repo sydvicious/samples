@@ -1,0 +1,42 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-toyawsauthenticationapp-amplify-234434-authRole",
+            "UnauthRoleArn": "arn:aws:iam::381625008980:role/amplify-toyawsauthenticationapp-amplify-234434-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::381625008980:role/amplify-toyawsauthenticationapp-amplify-234434-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-toyawsauthenticationapp-amplify-234434-deployment",
+            "UnauthRoleName": "amplify-toyawsauthenticationapp-amplify-234434-unauthRole",
+            "StackName": "amplify-toyawsauthenticationapp-amplify-234434",
+            "StackId": "arn:aws:cloudformation:us-east-2:381625008980:stack/amplify-toyawsauthenticationapp-amplify-234434/96637210-4c91-11ea-b946-0a3e4885fce2",
+            "AmplifyAppId": "d2mzuuziw00ut2"
+        }
+    },
+    "api": {
+        "amplifyDatasource": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "API_KEY",
+                        "apiKeyConfig": {
+                            "description": "",
+                            "apiKeyExpirationDays": 7
+                        }
+                    }
+                },
+                "GraphQLAPIIdOutput": "ghy6yct5sbcjbjw2i4hhjbh4j4",
+                "GraphQLAPIEndpointOutput": "https://3kmmbs3hr5aeneumvlozyib5pi.appsync-api.us-east-2.amazonaws.com/graphql",
+                "GraphQLAPIKeyOutput": "da2-67nxpcwu2rg4zafpa2ltx6tory"
+            },
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-toyawsauthenticationapp-amplify-234434-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+                "logicalId": "apiamplifyDatasource"
+            },
+            "lastPushTimeStamp": "2020-02-23T16:49:56.409Z",
+            "lastPushDirHash": "yp8u4ce8p67qLEnMxNFGfqQxj50="
+        }
+    }
+}

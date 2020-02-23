@@ -1,0 +1,6 @@
+framework module Pods_Toy_AWS_Authentication_AppTests {
+  umbrella header "Pods-Toy AWS Authentication AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
