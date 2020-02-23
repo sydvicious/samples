@@ -17,13 +17,13 @@
 		62D220C52402E49D00814A51 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 621660D923F274AF00F4759D /* amplifyconfiguration.json */; };
 		62F6DDF223F06F2F00052E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6DDF123F06F2F00052E6E /* AppDelegate.swift */; };
 		62F6DDF423F06F2F00052E6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6DDF323F06F2F00052E6E /* SceneDelegate.swift */; };
-		62F6DDF623F06F2F00052E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6DDF523F06F2F00052E6E /* ViewController.swift */; };
 		62F6DDF923F06F2F00052E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F6DDF723F06F2F00052E6E /* Main.storyboard */; };
 		62F6DDFB23F06F3500052E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F6DDFA23F06F3500052E6E /* Assets.xcassets */; };
 		62F6DDFE23F06F3500052E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F6DDFC23F06F3500052E6E /* LaunchScreen.storyboard */; };
 		62F6DE0923F06F3500052E6E /* Toy_AWS_Authentication_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6DE0823F06F3500052E6E /* Toy_AWS_Authentication_AppTests.swift */; };
 		62F6DE1423F06F3500052E6E /* Toy_AWS_Authentication_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6DE1323F06F3500052E6E /* Toy_AWS_Authentication_AppUITests.swift */; };
 		62F6DE2223F083C500052E6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 62F6DE2123F083C500052E6E /* Podfile */; };
+		62F99BDE2402F3A4008C2E77 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F99BDD2402F3A4008C2E77 /* GenericViewController.swift */; };
 		6A9B5C9C7A5447D8A47E2E84 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BD6CE3013D17427688A8909A /* awsconfiguration.json */; };
 		6F088AF2C06D906F64BB198F /* Pods_Toy_AWS_Authentication_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD291357DFA9EA0705BE929 /* Pods_Toy_AWS_Authentication_AppTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,6 @@
 		62F6DDEE23F06F2F00052E6E /* Toy AWS Authentication App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toy AWS Authentication App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F6DDF123F06F2F00052E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62F6DDF323F06F2F00052E6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62F6DDF523F06F2F00052E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62F6DDF823F06F2F00052E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62F6DDFA23F06F3500052E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62F6DDFD23F06F3500052E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +69,8 @@
 		62F6DE0F23F06F3500052E6E /* Toy AWS Authentication AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toy AWS Authentication AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F6DE1323F06F3500052E6E /* Toy_AWS_Authentication_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy_AWS_Authentication_AppUITests.swift; sourceTree = "<group>"; };
 		62F6DE1523F06F3500052E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62F6DE2123F083C500052E6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		62F6DE2123F083C500052E6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62F99BDD2402F3A4008C2E77 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		886E628AE0D387BE69B6796C /* Pods-Toy AWS Authentication App-Toy AWS Authentication AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy AWS Authentication App-Toy AWS Authentication AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Toy AWS Authentication App-Toy AWS Authentication AppUITests/Pods-Toy AWS Authentication App-Toy AWS Authentication AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8899F29E50D513811C389487 /* Pods-Toy AWS Authentication AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy AWS Authentication AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Toy AWS Authentication AppTests/Pods-Toy AWS Authentication AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D4DC845A950B2E5C6B1668C /* Pods-Toy AWS Authentication App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy AWS Authentication App.debug.xcconfig"; path = "Target Support Files/Pods-Toy AWS Authentication App/Pods-Toy AWS Authentication App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,11 +159,11 @@
 			children = (
 				62F6DDF123F06F2F00052E6E /* AppDelegate.swift */,
 				62F6DDF323F06F2F00052E6E /* SceneDelegate.swift */,
-				62F6DDF523F06F2F00052E6E /* ViewController.swift */,
 				62F6DDF723F06F2F00052E6E /* Main.storyboard */,
 				62F6DDFA23F06F3500052E6E /* Assets.xcassets */,
 				62F6DDFC23F06F3500052E6E /* LaunchScreen.storyboard */,
 				62F6DDFF23F06F3500052E6E /* Info.plist */,
+				62F99BDD2402F3A4008C2E77 /* GenericViewController.swift */,
 			);
 			path = "Toy AWS Authentication App";
 			sourceTree = "<group>";
@@ -438,7 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F6DDF623F06F2F00052E6E /* ViewController.swift in Sources */,
+				62F99BDE2402F3A4008C2E77 /* GenericViewController.swift in Sources */,
 				621660DC23F2759800F4759D /* AmplifyModels.swift in Sources */,
 				621660DE23F275A800F4759D /* Note.swift in Sources */,
 				621660E223F275B300F4759D /* Task.swift in Sources */,

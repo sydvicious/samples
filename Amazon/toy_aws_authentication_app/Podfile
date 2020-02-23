@@ -10,6 +10,9 @@ target 'Toy AWS Authentication App' do
   pod 'Amplify'
   pod 'AWSPluginsCore'
   pod 'AmplifyPlugins/AWSAPIPlugin'
+  pod 'AWSMobileClient', '~> 2.12.1'      # Required dependency
+  pod 'AWSAuthUI', '~> 2.12.1'            # Optional dependency required to use drop-in UI
+  pod 'AWSUserPoolsSignIn', '~> 2.12.1'   # Optional dependency required to use drop-in UI
 
   # Pods for Toy AWS Authentication App
 
