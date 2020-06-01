@@ -1,0 +1,3 @@
+[submodule "RxSwiftPracticalIntroduction"]
+	path = RxSwiftPracticalIntroduction
+	url = git@github.com:sydvicious/RxSwiftPracticalIntroduction.git
