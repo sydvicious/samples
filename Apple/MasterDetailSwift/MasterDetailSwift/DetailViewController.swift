@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  MasterDetailSwift
 //
-//  Created by Syd Polk on 8/4/15.
-//  Copyright © 2015 Bone Jarring Games and Software. All rights reserved.
+//  Created by Syd Polk on 7/13/18.
+//  Copyright © 2018 Bone Jarring Games and Software. All rights reserved.
 //
 
 import UIKit
@@ -15,8 +15,8 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
+        if let detail = detailItem {
+            if let label = detailDescriptionLabel {
                 label.text = detail.timestamp!.description
             }
         }
@@ -24,19 +24,14 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view.
+        configureView()
     }
 
     var detailItem: Event? {
         didSet {
             // Update the view.
-            self.configureView()
+            configureView()
         }
     }
 

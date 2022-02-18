@@ -2,8 +2,8 @@
 //  DetailViewController.m
 //  MasterDetailObjC
 //
-//  Created by Syd Polk on 6/9/15.
-//  Copyright © 2015 Bone Jarring Games and Software. All rights reserved.
+//  Created by Sydney Polk on 6/6/17.
+//  Copyright © 2017 Sydney Polk. All rights reserved.
 //
 
 #import "DetailViewController.h"
@@ -26,12 +26,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

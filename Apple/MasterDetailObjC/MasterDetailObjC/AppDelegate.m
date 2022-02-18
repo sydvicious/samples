@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  MasterDetailObjC
 //
-//  Created by Syd Polk on 6/9/15.
-//  Copyright © 2015 Bone Jarring Games and Software. All rights reserved.
+//  Created by Syd Polk on 6/17/18.
+//  Copyright © 2018 Bone Jarring Games and Software. All rights reserved.
 //
 
 #import "AppDelegate.h"

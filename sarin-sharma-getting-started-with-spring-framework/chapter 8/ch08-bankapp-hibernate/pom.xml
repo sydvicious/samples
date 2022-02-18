@@ -8,8 +8,8 @@
 	<version>0.1.0.BUILD-SNAPSHOT</version>
 	<name>ch08-bankapp-hibernate</name>
 	<properties>
-		<spring.version>4.3.0.RELEASE</spring.version>
-		<hibernate.version>5.1.0.Final</hibernate.version>
+		<spring.version>5.3.14</spring.version>
+		<hibernate.version>5.4.24.Final</hibernate.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -112,7 +112,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.18</version>
+			<version>8.0.16</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>

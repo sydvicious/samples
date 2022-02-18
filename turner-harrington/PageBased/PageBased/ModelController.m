@@ -25,13 +25,13 @@
 
 @implementation ModelController
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self) {
         // Create the data model.
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+        _pageData = [dateFormatter.monthSymbols copy];
     }
     return self;
 }
@@ -39,7 +39,7 @@
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
+    if (((self.pageData).count == 0) || (index >= (self.pageData).count)) {
         return nil;
     }
     
@@ -77,7 +77,7 @@
     }
     
     index++;
-    if (index == [self.pageData count]) {
+    if (index == (self.pageData).count) {
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];

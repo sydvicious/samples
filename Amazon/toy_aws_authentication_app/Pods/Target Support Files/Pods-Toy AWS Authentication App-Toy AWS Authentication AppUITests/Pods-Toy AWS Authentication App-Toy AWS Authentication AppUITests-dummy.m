@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Toy_AWS_Authentication_App_Toy_AWS_Authentication_AppUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Toy_AWS_Authentication_App_Toy_AWS_Authentication_AppUITests
+@end

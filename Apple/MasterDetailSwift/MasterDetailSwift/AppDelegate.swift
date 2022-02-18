@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MasterDetailSwift
 //
-//  Created by Syd Polk on 8/4/15.
-//  Copyright © 2015 Bone Jarring Games and Software. All rights reserved.
+//  Created by Syd Polk on 7/13/18.
+//  Copyright © 2018 Bone Jarring Games and Software. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
