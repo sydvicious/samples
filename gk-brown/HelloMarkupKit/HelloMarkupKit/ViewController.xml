@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root topSpacing="32" bottomSpacing="32" spacing="64">
+    <UIButton style="systemButton" title="Say Hello" onPrimaryActionTriggered="sayHello"/>
+    <UILabel id="greetingLabel" font="headline" textAlignment="center"/>
+    <LMSpacer/>
+</root>
