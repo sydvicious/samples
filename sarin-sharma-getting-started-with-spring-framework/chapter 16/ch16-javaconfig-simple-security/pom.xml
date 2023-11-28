@@ -9,7 +9,7 @@
 	<name>ch16-javaconfig-simple-security</name>
 	<properties>
 		<aspectj.version>1.8.9</aspectj.version>
-		<spring.version>6.0.8</spring.version>
+		<spring.version>6.0.14</spring.version>
 		<spring.security.version>5.2.10.RELEASE</spring.security.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
