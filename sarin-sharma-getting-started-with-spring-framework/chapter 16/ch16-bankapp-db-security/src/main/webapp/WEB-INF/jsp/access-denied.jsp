@@ -1,1 +1,0 @@
-Access to the requested resource is denied.
